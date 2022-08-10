@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,500;0,800;1,200;1,500;1,800&display=swap');
 
+:root {
+	--padding: 1em;
+}
+
 * {
 	color: white;
 	font-family: 'Jost', sans-serif;
@@ -24,10 +28,9 @@ figcaption {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	line-clamp: 20; 
-	-webkit-line-clamp: 20;
+	line-clamp: 3; 
+	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
-	margin: 1em auto;
 	max-width: 60ch;
 }
 
@@ -40,9 +43,9 @@ header {
 }
 
 main {
-  height: 100vh;
+	height: 100vh;
 	overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
 }
 
 section {
@@ -61,6 +64,7 @@ section > div {
 	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
+	overflow: hidden;
 	padding: 3rem;
 	width: 100vw;
 }
