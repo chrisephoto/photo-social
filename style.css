@@ -66,10 +66,9 @@ section figure img {
 }
 
 .post-title-bar {
-	align-items: end;
+	align-items: center;
 	box-sizing: border-box;
 	display: flex;
-	height: 15vh;
 	justify-content: space-between;
 	padding-bottom: var(--padding);
 	width: 100%;
