@@ -74,6 +74,18 @@ section figure img {
 	max-width: 60ch;
 }
 
+.post-info {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1rem;
+}
+
+.post-info .username {
+}
+
+.post-info .location {
+}
+
 .post-title-bar > :last-child {
 	margin-left: auto;
 }
