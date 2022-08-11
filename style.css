@@ -19,7 +19,8 @@ body {
 }
 
 figure {
-  
+	max-height: 80%;
+	max-width: 80%;
 }
 
 figcaption {
@@ -74,6 +75,14 @@ section figure img {
 	height: 100%;
 	object-fit: contain;
 	width: 100%;
+}
+
+.post-title-bar {
+}
+
+.post-title-bar .profile-picture {
+	border-radius: 1000px;
+	height: 3rem;
 }
 
 ::-webkit-scrollbar { 
