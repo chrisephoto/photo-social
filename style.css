@@ -81,23 +81,27 @@ section figure img {
 }
 
 .post-description {
+	-webkit-box-orient: vertical;
 	color: white;
+	display: -webkit-box;
 	font-family: 'Jost', sans-serif;
 	font-size: 1rem;
-	line-height: 1.25;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
 	line-clamp: 3; 
 	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
+	line-height: 1.25;
+	overflow: hidden;
+	padding-top: var(--padding);
+	text-overflow: ellipsis;
+	width: 100%;
 	max-width: 60ch;
 }
 
 .post-buttons {
-	height: calc(15vh - 3.75em);
+	padding-top: var(--padding);
+	width: 100%;
+	max-width: 60ch;
 }
 
 ::-webkit-scrollbar { 
-    display: none; 
+	display: none;
 }
