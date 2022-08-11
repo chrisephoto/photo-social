@@ -18,23 +18,6 @@ body {
 	padding: 0;
 }
 
-figure {
-	max-height: 80%;
-	max-width: 80%;
-}
-
-figcaption {
-	color: white;
-	font-family: 'Jost', sans-serif;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	line-clamp: 3; 
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
-	max-width: 60ch;
-}
-
 footer {
   
 }
@@ -57,7 +40,14 @@ section {
 	width: 100vw;
 }
 
-section > div {
+section figure img {
+	/*box-shadow: 0 19px 38px rgba(0,0,0,0.15), 0 15px 12px rgba(0,0,0,0.11);*/
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}
+
+.post-container {
 	align-items: center;
 	backdrop-filter: brightness(0.5) blur(32px);
 	box-sizing: border-box;
@@ -70,19 +60,35 @@ section > div {
 	width: 100vw;
 }
 
-section figure img {
-	/*box-shadow: 0 19px 38px rgba(0,0,0,0.15), 0 15px 12px rgba(0,0,0,0.11);*/
-	height: 100%;
-	object-fit: contain;
-	width: 100%;
+.post-container img {
+	max-height: 70vh;
+	max-width: 90vw;
 }
 
 .post-title-bar {
+	height: 15vh;
 }
 
 .post-title-bar .profile-picture {
 	border-radius: 1000px;
 	height: 3rem;
+}
+
+.post-description {
+	color: white;
+	font-family: 'Jost', sans-serif;
+	height: 10vh;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	line-clamp: 3; 
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	max-width: 60ch;
+}
+
+.post-buttons {
+	height: 5vh;
 }
 
 ::-webkit-scrollbar { 
