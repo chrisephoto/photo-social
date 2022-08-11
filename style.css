@@ -96,6 +96,14 @@ section figure img {
 	max-width: 60ch;
 }
 
+.post-description > :first-child {
+	margin-top: 0;
+}
+
+.post-description > :last-child {
+	margin-bottom: 0;
+}
+
 .post-buttons {
 	padding-top: var(--padding);
 	width: 100%;
