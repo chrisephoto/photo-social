@@ -83,7 +83,8 @@ section figure img {
 .post-description {
 	color: white;
 	font-family: 'Jost', sans-serif;
-	height: 10vh;
+	font-size: 1rem;
+	line-height: 1.25;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
@@ -94,7 +95,7 @@ section figure img {
 }
 
 .post-buttons {
-	height: 5vh;
+	height: calc(15vh - 3.75em);
 }
 
 ::-webkit-scrollbar { 
