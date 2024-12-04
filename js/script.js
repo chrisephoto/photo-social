@@ -4,8 +4,9 @@ window.onload=function(){
 }
 
 function populateFeed() {
+  let html = '';
   for (let i = 0; i < dataset.length; i++) {
-    HTML += `
+    html += `
       <section style="background-image:url('${dataset[i].photo}')">
           <div class="post-container">
             <div class="post-title-bar">
@@ -30,5 +31,5 @@ function populateFeed() {
       `
   }
   const target = document.querySelector('main');
-  target.appendChild(HTML);
+  target.innerHTML = html;
 }
