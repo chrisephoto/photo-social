@@ -28,7 +28,7 @@ function populateFeed() {
             </div>
           </div>
         </section>
-      `
+      `;
   }
   const target = document.querySelector('main');
   target.innerHTML = html;
