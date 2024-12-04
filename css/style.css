@@ -40,6 +40,13 @@ section figure img {
 	width: 100%;
 }
 
+button {
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin: 0 4px;
+}
+
 .post-container {
 	align-items: center;
 	backdrop-filter: brightness(0.5) blur(32px);
