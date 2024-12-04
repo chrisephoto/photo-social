@@ -43,8 +43,14 @@ section figure img {
 button {
 	background: transparent;
 	border: none;
+	cursor: pointer;
 	padding: 0;
 	margin: 0 4px;
+	transition: 0.15s;
+}
+
+button:hover {
+	transform: translateY(-2px);
 }
 
 .post-container {
