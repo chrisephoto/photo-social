@@ -5,7 +5,7 @@ window.onload=function(){
 
 function populateFeed() {
   for (let i = 0; i < dataset.length; i++) {
-    HTML += '
+    HTML += `
       <section style="background-image:url('${dataset[i].photo}')">
           <div class="post-container">
             <div class="post-title-bar">
@@ -27,7 +27,7 @@ function populateFeed() {
             </div>
           </div>
         </section>
-      '
+      `
   }
   const target = document.querySelector('main');
   target.appendChild(HTML);
